@@ -1,13 +1,193 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: "Verdana";
+    font-size: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #edeae6;
+    margin: 0;
+    text-align: start;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.film {
+    color: #cf0015;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(53, 53, 53, 0.9);
+    max-height: 30px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.search-form {
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.MuiFormLabel-root.Mui-focused {
+    color: #cf0015 !important;
+}
+
+.MuiFormLabel-root {
+    color: #edeae6 !important;
+}
+
+.MuiOutlinedInput-root {
+    color: white !important;
+}
+
+.Mui-focused fieldset {
+    border-color: #cf0015 !important;
+}
+
+.MuiFormHelperText-root {
+    color: #edeae6 !important;
+}
+
+fieldset {
+    border-color: #edeae6 !important;
+}
+
+.Mui {
+    color: white;
+}
+
+.movie {
+    width: 250px;
+    margin: 1rem;
+    background-color: rgba(53, 53, 53, 0.9);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.movie img {
+    object-fit: cover;
+    height: 400px;
+    max-width: 100%;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.logo {
+    color: black;
+    background-color: #edeae6;
+    border-radius: 5px;
+}
+
+.movie-rating {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 6px;
+    margin: -4px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+.movie-desc {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(207, 0, 21, 0.9);
+    color: #edeae6;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: translateY(-100%);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    transition: transform 400ms ease-in-out;
+    overflow: auto;
+    max-height: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.movie-desc p {
+    padding: 10px;
+    margin: 0;
+}
+
+.movie-desc h2 {
+    font-size: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.movie:hover .movie-desc {
+    transform: translateY(0);
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: green;
+}
+
+.tag.green {
+    color: green;
+}
+
+.tag.yellow {
+    color: yellow;
+}
+
+.tag.red {
+    color: red;
+}
+
+.icon {
+    margin-right: 5px;
 }

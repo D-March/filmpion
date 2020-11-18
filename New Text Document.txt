@@ -1,0 +1,7 @@
+KEY=586cd8123925627964403e9826ff41ee
+
+Search: https://api.themoviedb.org/3/search/movie?&api_key=586cd8123925627964403e9826ff41ee
+
+Featured: https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=586cd8123925627964403e9826ff41ee&page=1
+
+Images: https://image.tmdb.org/t/p/w1280
